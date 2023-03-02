@@ -28,7 +28,6 @@ function slateAttacksBoss(name) {
         boss.maxHealth -= slateDamage
         console.log(boss);
     }
-    drawBossHealth()
 }
 
 
@@ -48,9 +47,5 @@ function updateBossHealth(boss) {
 }
 
 function drawBossHealth() {
-    //NOTE - grab maxHealth
-    let smaug = document.getElementById("health-bar")
-    // @ts-ignore
-    smaug.innerText = boss.maxHealth
     
 }
