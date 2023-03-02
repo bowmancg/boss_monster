@@ -52,9 +52,5 @@ function drawBossHealth() {
     let smaug = document.getElementById("health-bar")
     // @ts-ignore
     smaug.innerText = boss.maxHealth
-
-    //NOTE - attack the boss
-    console.log(maxHealth);
-    flintAttacksBoss()
-    slateAttacksBoss()
+    
 }
