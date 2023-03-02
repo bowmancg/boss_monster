@@ -20,15 +20,40 @@
         <div class="row mt-2 ">
             <div class="card col-3 border border-outline p-2">
                 <div class="card-body">
+                    <span class="mdi mdi-emoticon-cool-outline fs-1"></span>
                     <h5>Slate Slabrock</h5>
+                    <button onclick="slateAttacksBoss(name)" type="button" class="btn btn-outline-info">Attack</button>
                 </div>
             </div>
             <div class="card col-3 border border-outline p-2">
                 <div class="card-body">
-                    <h5>FLint Ironstag</h5>
+                    <span class="mdi mdi-emoticon-tongue-outline fs-1"></span>
+                    <h5>Flint Ironstag</h5>
+                    <button onclick="flintAttacksBoss(name)" type="button" class="btn btn-outline-info">Attack</button>
                 </div>
             </div>
         </div>
+
+        <div class="row mt-2">
+            <div class="col-12 card border border-outline p-2">
+                <div class="card-body">
+                    <span class="mdi mdi-emoticon-devil-outline fs-1"></span>
+                    <h5>Smaug</h5>
+                    <span id="healthbar"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-4 card border border-outline p-2">
+                <div class="card-body">
+
+                </div>
+            </div>
+            <div class="col-8">
+                <button type="button" class="btn btn-outline-danger">Reset</button>
+            </div>
+        </div>
+
 
     </main>
     <footer>
