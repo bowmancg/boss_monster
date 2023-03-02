@@ -28,6 +28,7 @@ function slateAttacksBoss(name) {
         boss.maxHealth -= slateDamage
         console.log(boss);
     }
+    drawBossHealth()
 }
 
 
@@ -48,8 +49,10 @@ function updateBossHealth(boss) {
 
 function drawBossHealth() {
     //NOTE - grab maxHealth
-    let smaug = document.getElementById("healthbar")
-    
+    let smaug = document.getElementById("health-bar")
+    // @ts-ignore
+    smaug.innerText = boss.maxHealth
+
     //NOTE - attack the boss
     console.log(maxHealth);
     flintAttacksBoss()
