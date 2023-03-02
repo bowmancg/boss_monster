@@ -28,24 +28,33 @@ function slateAttacksBoss(name) {
         boss.maxHealth -= slateDamage
         console.log(boss);
     }
+    
+    drawBossHealth()
 }
 
-
-
-function flintAttacksBoss() {
+function flintAttacksBoss(name) {
     let hero = heroes.find(h => h.name == 'Flint Ironstag')
     let flintDamage = hero.damage
     if (boss.maxHealth <= 100) {
         boss.maxHealth -= flintDamage
         console.log(boss);
     }
-
+    drawBossHealth()
 }
 
-function updateBossHealth(boss) {
+function bossAttacksHeroes() {
+    let heroSlate = heroes.find(s => s.name == 'Slate Slabrock')
+    let heroFlint = heroes.find(f => f.name == 'Flint Ironstag')
+    
+    let bossDamage = boss.damage
+    
+}
+
+function updateBossHealth() {
 
 }
 
 function drawBossHealth() {
-    
+    let smaug = document.getElementById('health-bar')
+    smaug.innerText = boss.maxHealth
 }
