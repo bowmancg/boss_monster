@@ -3,13 +3,15 @@ const heroes = [
         name: 'Slate Slabrock',
         type: 'dwarf',
         damage: 5,
-        health: 100
+        health: 100,
+        // maxHealth: 100
     },
     {
         name: 'Flint Ironstag',
         type: 'elf',
         damage: 10,
-        health: 50
+        health: 50,
+        // maxHealth: 50
     }
 ]
 
@@ -42,19 +44,44 @@ function flintAttacksBoss(name) {
     drawBossHealth()
 }
 
-function bossAttacksHeroes() {
-    let heroSlate = heroes.find(s => s.name == 'Slate Slabrock')
-    let heroFlint = heroes.find(f => f.name == 'Flint Ironstag')
+// function bossAttacksHeroes(heroes) {
+//     let damage = 0
+//     heroes.filter(hero => hero.name = hero) {
+
+//     }
     
-    let bossDamage = boss.damage
+// }
+
+function letsKillSlater() {
+    heroes.find(hero => hero.name === 'Slater Slabrock')
     
 }
 
-function updateBossHealth() {
+// function updateSlateStatus(heroes) {
+//     heroes.forEach(hero => hero.name === 'Slate Slabrock')
+//     for (hero.maxHealth = 100; hero.maxHealth <= 100; hero.maxHealth--) {
+//         if(hero.maxHealth <= 0) {
+//             hero.maxHealth === 0
+//         }
+//     }
+// }
 
+function drawHeroesHealth() {
+    let template = ''
+    heroes.forEach(hero => {
+        template += `${heroes.name}`
+    });
+    document.getElementById('hero-1').innerHTML = template
+    document.getElementById('hero-2').innerHTML = template
 }
+
+// drawHeroesHealth() {
+
+// }
 
 function drawBossHealth() {
     let smaug = document.getElementById('health-bar')
     smaug.innerText = boss.maxHealth
 }
+
+setInterval(bossAttacksHeroes, 5000)
